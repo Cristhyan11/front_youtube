@@ -1,9 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/styles.css'; // Asegúrate de importar el archivo CSS
 
 const VideoDisplay = () => {
   const [videos, setVideos] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchAllVideos = async () => {
@@ -20,7 +22,7 @@ const VideoDisplay = () => {
 
   const handleLogout = () => {
     localStorage.clear();
-    window.location.href = '/';
+    navigate('/'); // Usar navigate para redireccionar
   };
 
   return (

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/styles.css'; // Asegúrate de importar el archivo CSS
 
 const VideoUploadAndDisplay = () => {
@@ -9,6 +10,7 @@ const VideoUploadAndDisplay = () => {
   const [message, setMessage] = useState('');
   const [videos, setVideos] = useState([]);
   const [userEmail, setUserEmail] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
@@ -20,7 +22,7 @@ const VideoUploadAndDisplay = () => {
 
   const fetchUserVideos = async (email) => {
     try {
-      const response = await axios.get('https://back-youtube.vercel.app/api/user/videos', {
+      const response = await axios.get('https://back-youtube.vercel.app/api/user/videoss', {
         params: { email }
       });
       setVideos(response.data.videos);
@@ -67,7 +69,7 @@ const VideoUploadAndDisplay = () => {
 
   const handleLogout = () => {
     localStorage.clear();
-    window.location.href = '/';
+    navigate('/'); // Usar navigate para redireccionar
   };
 
   return (
