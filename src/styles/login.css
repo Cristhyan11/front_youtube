@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+/* Estilo general del contenedor del formulario */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  background-color: #242424; /* Fondo oscuro */
+  color: rgb(0, 0, 0); /* Color del texto negro */
+  padding: 20px;
+}
+
+/* Estilo del título del formulario */
+.form-title {
+  font-size: 2rem; /* Tamaño de fuente grande */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  color: white; /* Color del texto blanco */
+}
+
+/* Estilo para cada grupo de formulario */
+.form-group {
+  margin-bottom: 15px; /* Espacio entre los grupos */
+  width: 100%; /* Ancho completo */
+}
+
+/* Estilo de las etiquetas */
+.form-group label {
+  display: block; /* Muestra las etiquetas en bloque */
+  margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+  font-weight: bold; /* Negrita para las etiquetas */
+  color: white; /* Color del texto blanco */
+}
+
+/* Estilo de los campos de entrada */
+.form-group input {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #000000; /* Bordes claros */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de fuente */
+  color: black; /* Color del texto negro */
+  background-color: rgb(255, 255, 255); /* Color de fondo blanco para los campos de entrada */
+  transition: border-color 0.3s; /* Transición suave para el color del borde */
+}
+
+/* Efecto de enfoque en los campos de entrada */
+.form-group input:focus {
+  border-color: #007bff; /* Color de borde al hacer foco */
+  outline: none; /* Quitar el contorno por defecto */
+}
+
+/* Estilo del botón de envío */
+.submit-button {
+  background-color: #007bff; /* Color de fondo azul */
+  color: rgb(0, 0, 0); /* Color del texto */
+  border: none; /* Sin bordes */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Efecto de hover en el botón */
+.submit-button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Cambiar a fixed para evitar scroll */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(144, 168, 233);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 250px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+}
+.modal-content {
+  background-color: rgb(144, 168, 233);
+  color: black;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}

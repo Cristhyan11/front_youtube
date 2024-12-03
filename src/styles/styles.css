@@ -1,0 +1,118 @@
+/* styles.css */
+
+/* Fondo oscuro */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Contenedor principal centrado */
+  .container {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el formulario */
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #bbbbbb;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2c2c2c;
+    color: #ffffff;
+  }
+  
+  .form-title {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  .submit-button,
+  .logout-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ee;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover,
+  .logout-button:hover {
+    background-color: #3700b3;
+  }
+  
+  .logout-button {
+    background-color: #ff0000;
+    margin-left: 10px;
+  }
+  
+  button {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los videos */
+  .video-container {
+    margin-bottom: 20px;
+  }
+  
+  .video-container h3 {
+    margin-top: 10px;
+  }
+  
+  .video-container video {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .video-container p {
+    margin: 10px 0;
+  }
+  
+  /* Botones de navegación */
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .nav-buttons a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #6200ee;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-buttons a:hover {
+    background-color: #3700b3;
+  }
+  

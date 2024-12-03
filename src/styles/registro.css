@@ -1,0 +1,119 @@
+/* Reseteo de márgenes y bordes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del overlay del modal */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Estilo general del contenedor del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #242424;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+/* Estilo del título del formulario */
+.form-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Estilo para cada grupo de formulario */
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Estilo de las etiquetas */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilo de los campos de entrada y selectores */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    transition: border-color 0.3s;
+}
+
+/* Efecto de enfoque en los campos de entrada y selectores */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo del botón de envío */
+.submit-button {
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efecto de hover en el botón */
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del modal */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(144, 168, 233);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 250px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* Estilo del contenido del modal */
+.modal-content {
+    background-color: rgb(144, 168, 233);
+    color: black;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
